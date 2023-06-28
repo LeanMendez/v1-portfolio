@@ -48,15 +48,14 @@ export const getStaticProps: GetStaticProps = async({params}:any) => {
 }
 
 const PostPage = (props:IPostMetadata) => {
-const {title, date, content,slug,subtitle} = props.matterResult
+const {title, date, content,subtitle} = props.matterResult
   return (
-    <div>
-      <span className={`text-sm text-slate-500`}>{date}</span>
-      <h1 className="text-5xl">{title}</h1>
-      <h2 className={`text-2xl text-slate-400`}>{subtitle}</h2>
-
-    <p className={`text-sm text-yellow-300`}><Markdown>{content}</Markdown></p>
-    </div>
+    <article className={`flex flex-col lg:min-w-[50rem] mx-auto prose prose-invert prose-mine`}>
+      <span >{date}</span>
+      <h1 >{title}</h1>
+      <h2 >{subtitle}</h2>
+    <Markdown>{content}</Markdown>
+    </article>
   )
 }
 
