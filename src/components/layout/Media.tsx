@@ -2,7 +2,7 @@ const Media = () => {
   return (
     <div className={`flex flex-row mb-72 gap-8 place-items-center`}>
       <svg
-        className={`text-slate-400 hover:text-yellow-200`}
+        className={`text-slate-300 hover:text-yellow-200 hover:drop-shadow-neon`}
         width="32"
         height="32"
         viewBox="0 0 32 32"
@@ -16,7 +16,7 @@ const Media = () => {
       </svg>
 
       <svg
-        className={`text-slate-400 hover:text-yellow-200`}
+        className={`text-slate-300 hover:text-yellow-200 hover:drop-shadow-neon`}
         width="32"
         height="32"
         viewBox="0 0 32 32"
@@ -29,7 +29,7 @@ const Media = () => {
         />
       </svg>
       <svg
-        className={`text-slate-400 hover:text-yellow-200`}
+        className={`text-slate-300 hover:text-yellow-200 hover:drop-shadow-neon`}
         width="32"
         height="26"
         viewBox="0 0 32 26"
@@ -43,7 +43,7 @@ const Media = () => {
       </svg>
 
       <svg
-        className={`text-slate-400 hover:text-yellow-200`}
+        className={`text-slate-300 hover:text-yellow-200 hover:drop-shadow-neon`}
         width="32"
         height="24"
         viewBox="0 0 32 24"
@@ -60,3 +60,6 @@ const Media = () => {
 };
 
 export default Media;
+
+
+

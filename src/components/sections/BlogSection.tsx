@@ -1,16 +1,14 @@
 import React from 'react'
 import Title from '../ui-components/Title'
 import BlogCard from '../ui-components/BlogCard'
-import { IBlogSection } from '@/types'
-import Link from '../ui-components/Link'
 
 
-const BlogSection = ({slugs}:IBlogSection) => {
+const BlogSection = () => {
 
   return (
-    <section className={`flex flex-col gap-5`}>
-      <Title>Blog Section</Title>
-    {slugs.map(slug => <Link key={slug} href={`http://localhost:3000/blog/${slug}`}><span >{slug}</span></Link>)}
+    <section id={'blog'} className={`flex flex-col gap-5 min-h-[1200px] scroll-m-24` }>
+      <Title>Blog Articles</Title>
+    <BlogCard />
     </section>
   )
 }

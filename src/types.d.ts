@@ -1,22 +1,43 @@
 //HOME PAGE
 export interface IHome {
-  slugs: string[];
+  arrSlugs: string[];
 }
 
-//BLOG SECTION
-export interface IBlogSection {
-  slugs: string[];
+//PROJECTS SECTION
+export interface IProjectSection {
+  slug: string;
 }
 
 //POST METADATA
 export interface IPostMetadata {
-  matterResult: IMeta;
+  projects: IMeta[];
 }
 
 interface IMeta {
   title: string;
   date: string;
+  github: string;
+  external: string;
+  tech: string[];
+  company: string
+  showInProjects: boolean;
+  slug: string;
+  source: MDXRemoteSerializeResult<Record<string, unknown>, Record<string, unknown>>;
+}
+
+interface IFrontmatter{
+  title: string;
+  date: string;
   subtitle: string;
   slug: string;
-  content: string;
+}
+
+
+interface IgetFilesBySlug {
+  slug: string;
+  type: string;
+}
+
+interface Icomponente {
+  data: IMeta
 }

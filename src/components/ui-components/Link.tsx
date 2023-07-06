@@ -29,7 +29,7 @@ const Link = ({ children, href, className }: ILink) => {
       {extLink && (
         <span>
           <svg
-            className={` ${classNameStyle} inline-block mb-2 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-yellow-200 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px`}
+            className={` ${classNameStyle} inline-block mb-2 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-yellow-200 hover:drop-shadow-neon group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px`}
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
 

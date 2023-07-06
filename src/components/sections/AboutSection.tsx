@@ -1,9 +1,9 @@
 import React from 'react'
 import Title from '../ui-components/Title'
 
-const About = () => {
+const AboutSection = () => {
   return (
-    <section className={`flex flex-col gap-5 mb-10`}>
+    <section id={'about'} className={`flex flex-col gap-5 mb-10 scroll-m-48`}>
     <Title>About Me</Title>
     <p>In 2012, I decided to pursue my dream of studying computer engineering. Unfortunately, the career wasn&apos;t available in the city where I lived at the time. Thanks to the support of my parents and a stroke of luck, I ended up studying this wonderful career in the city of Córdoba, a little far from home. However, the universe did not conspire in my favor. Due to the strong economic crisis that affected the country in those years, my possibilities were affected and I had to leave the career and return to my hometown.</p>
     <p>I had to postpone that dream a little longer. But internally, I never lost hope of returning to the world of technology.</p>
@@ -17,4 +17,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutSection

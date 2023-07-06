@@ -16,6 +16,10 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   /* background: linear-gradient(
@@ -26,10 +30,37 @@ body {
     rgb(var(--background-start-rgb)); */
 
     /* background: conic-gradient(from 137.67deg at 54.58% 51.56%, #2D2C2C -105.1deg, #1E1E1E 96.74deg, #2D2C2C 254.9deg, #1E1E1E 456.74deg); */
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: #000000;  
+    background: -webkit-linear-gradient(to left, #434343, #000000); 
+    background: linear-gradient(to left, #434343, #000000);  */
     
+
+    background-image: linear-gradient(
+      60deg,
+      hsl(0deg 0% 0%) 0%,
+      hsl(20deg 100% 5%) 13%,
+      hsl(33deg 100% 6%) 19%,
+      hsl(40deg 100% 6%) 23%,
+      hsl(44deg 100% 7%) 27%,
+      hsl(48deg 100% 8%) 31%,
+      hsl(50deg 100% 8%) 34%,
+      hsl(52deg 100% 9%) 38%,
+      hsl(53deg 100% 10%) 41%,
+      hsl(53deg 83% 12%) 44%,
+      hsl(52deg 68% 15%) 47%,
+      hsl(52deg 60% 17%) 50%,
+      hsl(51deg 55% 16%) 53%,
+      hsl(51deg 49% 16%) 56%,
+      hsl(50deg 44% 16%) 59%,
+      hsl(50deg 39% 16%) 62%,
+      hsl(49deg 34% 15%) 66%,
+      hsl(49deg 29% 15%) 69%,
+      hsl(48deg 24% 15%) 73%,
+      hsl(47deg 19% 14%) 77%,
+      hsl(46deg 13% 14%) 81%,
+      hsl(45deg 7% 13%) 87%,
+      hsl(0deg 0% 13%) 100%
+    );
     
 }
 
@@ -37,3 +68,4 @@ body {
   background: linear-gradient(108.86deg, rgba(255, 255, 255, 0.06) -21.83%, rgba(255, 255, 255, 0) 98.66%);
   backdrop-filter: blur(4px);
 }
+

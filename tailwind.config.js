@@ -44,6 +44,13 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      boxShadow: {
+        neon: "0 0 10px theme('colors.yellow.200'), 0 0 25px theme('colors.yellow.700')",
+        muteNeon: "0 0 3px theme('colors.yellow.200'), 0 0 20px theme('colors.yellow.900')"
+      },
+      dropShadow: {
+        neon: "0 0px 15px theme('colors.yellow.700')",
+      }
     },
   },
   plugins: [require('@tailwindcss/typography')],
