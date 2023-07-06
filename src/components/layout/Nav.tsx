@@ -31,7 +31,7 @@ const Nav = () => {
 
       setActiveSection(active);
     };
-    console.log(activeSection, "pepeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
+    
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -53,7 +53,7 @@ const Nav = () => {
 
 
   return (
-    <nav className={`nav hidden lg:block min-w-[400px] lg:mb-64`}>
+    <nav className={`nav hidden lg:block min-w-[400px] lg:mb-60`}>
       <ul className={`flex flex-col mt-16 w-max`}>
         <li>
           <ScrollLink offset={-100} activeClass="active"  smooth={true} duration={500} spy={true} to="about"  className={`group flex  cursor-pointer items-center py-3 hover:drop-shadow-neon`}>

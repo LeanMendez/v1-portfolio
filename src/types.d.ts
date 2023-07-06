@@ -10,13 +10,22 @@ export interface IProjectSection {
 
 //POST METADATA
 export interface IPostMetadata {
-  projects: IMeta[];
+  projects: IProjects[];
+  articles: IArticles[]
 }
 
-interface IMeta {
+interface IArticles{
+  title: string;
+  date: string;
+  showInProjects: boolean;
+  external: string;
+}
+
+interface IProjects {
   title: string;
   date: string;
   github: string;
+  image: string;
   external: string;
   tech: string[];
   company: string
