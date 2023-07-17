@@ -2,7 +2,7 @@ import Link from "../ui-components/Link";
 
 const Media = () => {
   return (
-    <div className={`flex flex-row lg:mb-24 gap-8 place-items-center`}>
+    <div className={`flex flex-row  gap-8 place-items-center`}>
       <Link icon={false} href={"https://www.linkedin.com/in/leandroamendez/"}>
         <svg
           className={`text-slate-300 hover:text-yellow-200 hover:drop-shadow-neon`}

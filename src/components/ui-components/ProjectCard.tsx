@@ -18,7 +18,7 @@ const ProjectCard:React.FC<IProjects>= (props) => {
       ><span className={`text-2xl leading-6 duration-300 inline-block mb-4`}>{props.title}</span>
       <div className={`flex flex-row`}>
       <aside className={`min-w-[120px] hidden sm:block`}>
-        <Image className={` mt-2 rounded ease-in duration-100 grayscale group-hover/link:grayscale-0 sm:order-1 sm:col-span-2 sm:translate-y-1`} src={`/img/${props.image}`} alt={props.title} height={80} width={120} />
+        <Image className={` mt-2 rounded ease-in duration-100 grayscale group-hover/link:grayscale-0 sm:order-1 sm:col-span-2 sm:translate-y-1`} src={`/img/${props.image}`} alt={props.title} height={88} width={120} />
       </aside>
       <main className="ml-6">
         <div className={`text-sm leading-normal  font-light text-slate-200`}>

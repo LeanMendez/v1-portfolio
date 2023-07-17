@@ -53,59 +53,59 @@ const Nav = () => {
 
 
   return (
-    <nav className={`nav hidden lg:block min-w-[400px] lg:mb-60`}>
+    <nav className={`nav hidden lg:block min-w-[400px] lg:mb-40`}>
       <ul className={`flex flex-col mt-16 w-max`}>
         <li>
-          <ScrollLink offset={-100} activeClass="active"  smooth={true} duration={500} spy={true} to="about"  className={`group flex  cursor-pointer items-center py-3 hover:drop-shadow-neon`}>
+          <ScrollLink offset={-100} activeClass="active"  smooth={true} duration={500} spy={true} to="about"  className={`group flex  lg:cursor-pointer  items-center py-3 hover:drop-shadow-neon`}>
             <span
               className={`nav-indicator mr-4 h-px w-8 bg-slate-400 transition-all group-hover:w-16 group-hover:bg-yellow-200 group-focus-visible:w-16 group-hover:h-[3px] group-focus-visible:bg-yellow-200 motion-reduce:transition-none`}
               style={getLineStyles('about')}
             ></span>
             <span
               className={`nav-text text-lg font-bold uppercase tracking-widest text-slate-500 group-hover:text-yellow-200 group-focus-visible:text-yellow-200`}
-              style={getLinkStyles('about')}
+              style={getLinkStyles('about')} tabIndex={0}
             >
               About
             </span>
           </ScrollLink>
         </li>
         <li>
-        <ScrollLink offset={-100} activeClass="active" smooth={true} duration={500} spy={true} to="skills" className={`group flex cursor-pointer items-center py-3 hover:drop-shadow-neon`}>
+        <ScrollLink offset={-100} activeClass="active" smooth={true} duration={500} spy={true} to="skills" className={`group flex lg:cursor-pointer  items-center py-3 hover:drop-shadow-neon`}>
             <span
               className={`nav-indicator mr-4 h-px w-8 bg-slate-400 transition-all group-hover:w-16 group-hover:bg-yellow-200 group-focus-visible:w-16 group-hover:h-[3px] group-focus-visible:bg-yellow-200 motion-reduce:transition-none`}
               style={getLineStyles('skills')}
             ></span>
             <span
               className={`nav-text text-lg font-bold uppercase tracking-widest text-slate-500  group-hover:text-yellow-200 group-focus-visible:text-yellow-200`}
-              style={getLinkStyles('skills')}
+              style={getLinkStyles('skills')} tabIndex={0}
             >
               Skills
             </span>
           </ScrollLink>
         </li>
         <li>
-        <ScrollLink offset={-100} activeClass="active" smooth={true} duration={500} spy={true} to="projects" className={`group flex cursor-pointer items-center py-3 hover:drop-shadow-neon`}>
+        <ScrollLink offset={-100} activeClass="active" smooth={true} duration={500} spy={true} to="projects" className={`group flex lg:cursor-pointer  items-center py-3 hover:drop-shadow-neon`}>
             <span
               className={`nav-indicator mr-4 h-px w-8 bg-slate-400 transition-all group-hover:w-16 group-hover:bg-yellow-200 group-focus-visible:w-16 group-hover:h-[3px] group-focus-visible:bg-yellow-200 motion-reduce:transition-none`}
               style={getLineStyles('projects')}
             ></span>
             <span
               className={`nav-text text-lg font-bold uppercase tracking-widest text-slate-500 group-hover:text-yellow-200 group-focus-visible:text-yellow-200`}
-              style={getLinkStyles('projects')}
+              style={getLinkStyles('projects')} tabIndex={0}
             >
               Projects
             </span>
           </ScrollLink>
         </li>
         <li>
-        <ScrollLink offset={-100} activeClass="active" smooth={true} duration={500} spy={true} to="blog" className={`group flex  cursor-pointer items-center py-3 hover:drop-shadow-neon`}>
+        <ScrollLink offset={-100} activeClass="active" smooth={true} duration={500} spy={true} to="blog" className={`group flex  lg:cursor-pointer  items-center py-3 hover:drop-shadow-neon`}>
             <span
               className={`nav-indicator mr-4 h-px w-8 bg-slate-400 transition-all group-hover:w-16 group-hover:bg-yellow-200 group-focus-visible:w-16 group-hover:h-[3px] group-focus-visible:bg-yellow-200 motion-reduce:transition-none`}
               style={getLineStyles('blog')}
             ></span>
             <span
               className={`nav-text text-lg font-bold uppercase tracking-widest text-slate-500 group-hover:text-yellow-200 group-focus-visible:text-yellow-200`}
-              style={getLinkStyles('blog')}
+              style={getLinkStyles('blog')} tabIndex={0}
             >
               Blog
             </span>

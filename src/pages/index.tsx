@@ -17,8 +17,10 @@ const inter = Inter({ subsets: ['latin'] })
 export const getStaticProps = async() => {
     const projects = await getAllFilesFrontMatter("projects")
     const articles = await getAllFilesFrontMatter("blog")
+    const skills = await getAllFilesFrontMatter("skills")
   return {
     props: {
+      skills,
       projects,
       articles
     },
@@ -27,19 +29,19 @@ export const getStaticProps = async() => {
 
  const Home = (props:IPostMetadata) => {
   
-  const {projects, articles} = props
+  const {projects, articles, skills} = props
   return (
     <main
-      className={`flex flex-col lg:flex-row gap-x-16 min-h-screen mx-auto max-w-screen-xl px-4 lg:px-6 md:px-24 ${inter.className} text-sm sm:text-base`}
+      className={`flex flex-col lg:flex-row gap-x-16 min-h-screen mx-auto max-w-screen-xl  lg:px-24 sm:px-12 px-4 ${inter.className} text-sm sm:text-base`}
     >
      <Header/> 
      <aside className={`flex flex-col flex-1 pt-24 gap-5`}>
       <AboutSection/>
-      <SkillsSection/>
+      <SkillsSection props={skills}/>
       <ProjectSection props={projects} />
       <BlogSection props={articles}/>
+      <Footer StyleClass='lg:hidden'/>
       <ScrollToTopArrow />
-      <Footer/>
      </aside>
     </main>
   )

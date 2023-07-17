@@ -46,7 +46,7 @@ module.exports = {
       },
       boxShadow: {
         neon: "0 0 10px theme('colors.yellow.200'), 0 0 25px theme('colors.yellow.700')",
-        muteNeon: "0 0 3px theme('colors.yellow.200'), 0 0 20px theme('colors.yellow.900')"
+        muteNeon: "0 0 3px theme('colors.yellow.200'), 0 0 20px theme('colors.yellow.950')"
       },
       dropShadow: {
         neon: "0 0px 15px theme('colors.yellow.700')",

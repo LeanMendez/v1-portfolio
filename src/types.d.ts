@@ -11,7 +11,8 @@ export interface IProjectSection {
 //POST METADATA
 export interface IPostMetadata {
   projects: IProjects[];
-  articles: IArticles[]
+  articles: IArticles[];
+  skills: ISkillCard[]
 }
 
 interface IArticles{
@@ -21,6 +22,8 @@ interface IArticles{
   external: string;
 }
 
+
+// PROJECTS
 interface IProjects {
   title: string;
   date: string;
@@ -32,6 +35,18 @@ interface IProjects {
   showInProjects: boolean;
   slug: string;
   source: MDXRemoteSerializeResult<Record<string, unknown>, Record<string, unknown>>;
+}
+
+// SKILLS
+export interface ISkillCard {
+  title: string;
+  skills: string[] 
+}
+
+
+//Footer
+export interface IFooter{
+  StyleClass?: string;
 }
 
 interface IFrontmatter{
@@ -50,3 +65,4 @@ interface IgetFilesBySlug {
 interface Icomponente {
   data: IMeta
 }
+
