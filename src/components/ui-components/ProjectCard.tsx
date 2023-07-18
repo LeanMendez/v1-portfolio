@@ -9,7 +9,7 @@ import { IProjects } from "@/types";
 const ProjectCard:React.FC<IProjects>= (props) => {
   return (
     <Link
-      className={`h-6 w-6 text-slate-200 no-underline`}
+      className={`text-slate-200 no-underline`}
       href={props.external ? props.external  : props.github}
       icon={false}
       >
